@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sujit Pramanik | AI/ML Developer Portfolio</title>
+  <meta name="description" content="Sujit Pramanik — AI/ML Developer building smart automation, voice assistants, and AI-powered solutions. Explore projects, skills, and more." />
+  <meta name="keywords" content="AI developer, machine learning projects, AI portfolio, voice assistant, Python ML, chatbot developer, Sujit Pramanik" />
+  <meta name="author" content="Sujit Pramanik" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sujit Pramanik | AI/ML Developer" />
+  <meta property="og:description" content="Building smart automation & voice-based AI systems." />
+  <meta property="og:type" content="website" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Sujit<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Journey</a></li>
+        <li><a href="#proof">Proof</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-greeting">Hi, I'm <span class="highlight">Sujit Pramanik</span> 👋</span>
+          <span class="hero-tagline">AI/ML Developer building<br/><span class="typed-wrapper"><span id="typed"></span></span></span>
+        </h1>
+        <p class="hero-subtitle">
+          I'm a B.Tech CSE (AI & ML) student who creates real-world intelligent systems — from voice assistants that understand natural language to customer support agents that never sleep. I turn ideas into working AI solutions.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">AI Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Learning</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-ring">
+          <div class="profile-ring-inner">
+            <img src="assets/profile.png" alt="Sujit Pramanik - AI/ML Developer" class="profile-img" id="profileImg" />
+          </div>
+          <div class="orbit orbit-1">
+            <div class="orbit-dot" title="Python"><i class="fab fa-python"></i></div>
+          </div>
+          <div class="orbit orbit-2">
+            <div class="orbit-dot" title="AI/ML"><i class="fas fa-brain"></i></div>
+          </div>
+          <div class="orbit orbit-3">
+            <div class="orbit-dot" title="Code"><i class="fas fa-code"></i></div>
+          </div>
+        </div>
+        <!-- Voice Demo Button -->
+        <button class="voice-demo-btn" id="voiceDemoBtn" title="Click to hear the AI Voice Demo">
+          <div class="voice-icon-wrap">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <span>Voice AI Demo</span>
+          <div class="voice-wave">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-story">
+          <p class="about-intro">
+            I'm <strong>Sujit Pramanik</strong>, a first-year B.Tech student in CSE (AI & ML) at SETGOI, affiliated to Maulana Abul Kalam Azad University of Technology, Durgapur, West Bengal.
+          </p>
+          <p>
+            My journey into AI started with a simple curiosity: <em>"Can I build a machine that talks back to me?"</em> That question led me to Python, then to machine learning models, and now to building AI systems that solve real problems.
+          </p>
+          <p>
+            I believe the best way to learn is by building. Every project I create teaches me something new — whether it's fine-tuning a voice model, training a classifier, or deploying a chatbot that helps businesses automate customer support.
+          </p>
+          <div class="about-goal">
+            <div class="goal-icon"><i class="fas fa-bullseye"></i></div>
+            <div>
+              <strong>My Goal:</strong> Become a Machine Learning Developer who bridges the gap between cutting-edge research and real-world impact.
+            </div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Education</h3>
+            <p>B.Tech CSE (AI & ML)<br/>SETGOI, MAKAUT<br/><span class="about-card-tag">2025–2028</span></p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Location</h3>
+            <p>Durgapur, West Bengal<br/>India 713212</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>I Love Solving</h3>
+            <p>Automation challenges<br/>NLP & voice problems<br/>Prediction systems</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon"><i class="fas fa-book-open"></i></div>
+            <h3>Currently Learning</h3>
+            <p>Deep Learning<br/>LangChain & LLMs<br/>Voice AI systems</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Use</span>
+        <h2 class="section-title">Skills <span class="highlight">With Proof</span></h2>
+        <p class="section-sub">Not just a list — each skill backed by a real project</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-skill="python">
+          <div class="skill-header">
+            <div class="skill-icon python-icon"><i class="fab fa-python"></i></div>
+            <div>
+              <h3>Python</h3>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                <span>Advanced</span>
+              </div>
+            </div>
+          </div>
+          <p class="skill-desc">My primary language for all AI/ML work — clean, powerful, and versatile.</p>
+          <div class="skill-proof">
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Built ML prediction models</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Scripted voice AI logic</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> QR Code Generator app</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="ml">
+          <div class="skill-header">
+            <div class="skill-icon ml-icon"><i class="fas fa-brain"></i></div>
+            <div>
+              <h3>AI / Machine Learning</h3>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </div>
+          <p class="skill-desc">Training models, working with datasets, building intelligent systems that learn from data.</p>
+          <div class="skill-proof">
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Created chatbot AI agent</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Built prediction system</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> NLP-powered voice assistant</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="web">
+          <div class="skill-header">
+            <div class="skill-icon web-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <h3>Web Development</h3>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </div>
+          <p class="skill-desc">Building clean, responsive web interfaces that showcase AI capabilities.</p>
+          <div class="skill-proof">
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> This portfolio website</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Restaurant website (WP)</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> HTML5, CSS3, JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="voice">
+          <div class="skill-header">
+            <div class="skill-icon voice-icon"><i class="fas fa-microphone-alt"></i></div>
+            <div>
+              <h3>Voice AI & NLP</h3>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </div>
+          <p class="skill-desc">Building systems that understand and respond to human speech — bridging the gap between humans and machines.</p>
+          <div class="skill-proof">
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Voice assistant project</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Speech processing</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Text-to-speech systems</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="tools">
+          <div class="skill-header">
+            <div class="skill-icon tools-icon"><i class="fas fa-tools"></i></div>
+            <div>
+              <h3>Tools & Platforms</h3>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </div>
+          <p class="skill-desc">Comfortable with the modern developer toolkit across ML and web environments.</p>
+          <div class="skill-proof">
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> Git & GitHub</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> VS Code</span>
+            <span class="proof-tag"><i class="fas fa-check-circle"></i> WordPress</span>
+          </div>
+        </div>
+
+        <div class="skill-card skill-card-tech">
+          <h3 class="tech-stack-title">Full Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+
+            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tech-tag"><i class="fab fa-wordpress"></i> WordPress</span>
+            <span class="tech-tag"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="tech-tag"><i class="fab fa-github"></i> GitHub</span>
+            <span class="tech-tag">Java (Basic)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <p class="section-sub">Real problems. Real solutions. Real impact.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: AI Voice Assistant -->
+        <div class="project-card featured-project" id="proj-voice">
+          <div class="project-badge">Featured</div>
+          <div class="project-header">
+            <div class="project-icon voice-proj-icon"><i class="fas fa-microphone"></i></div>
+            <div class="project-meta">
+              <span class="project-number">01</span>
+              <h3 class="project-title">AI Voice Assistant</h3>
+            </div>
+          </div>
+          <div class="project-problem">
+            <span class="problem-label"><i class="fas fa-exclamation-triangle"></i> Problem</span>
+            <p>People often need quick information or task execution hands-free — without typing a single key.</p>
+          </div>
+          <div class="project-solution">
+            <span class="solution-label"><i class="fas fa-check-circle"></i> Solution</span>
+            <p>Built a Python-powered voice assistant that listens to voice commands, understands intent using NLP, and responds with text-to-speech output — capable of searching the web, telling time/date, and more.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Python</span>
+
+            <span class="tech-chip">Wikipedia API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sujit-pramaniik" target="_blank" class="proj-link proj-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <button class="proj-link proj-demo" onclick="openDemoModal('voice')">
+              <i class="fas fa-play"></i> Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Customer Support AI Agent -->
+        <div class="project-card" id="proj-support">
+          <div class="project-header">
+            <div class="project-icon support-proj-icon"><i class="fas fa-headset"></i></div>
+            <div class="project-meta">
+              <span class="project-number">02</span>
+              <h3 class="project-title">Customer Support AI Agent</h3>
+            </div>
+          </div>
+          <div class="project-problem">
+            <span class="problem-label"><i class="fas fa-exclamation-triangle"></i> Problem</span>
+            <p>Businesses spend thousands on human agents to handle repetitive customer queries 24/7.</p>
+          </div>
+          <div class="project-solution">
+            <span class="solution-label"><i class="fas fa-check-circle"></i> Solution</span>
+            <p>Developed an AI-powered support chatbot that understands customer questions, matches intent to predefined responses using NLP classification, and escalates complex queries — automating ~80% of routine interactions.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Python</span>
+
+            <span class="tech-chip">Flask</span>
+            <span class="tech-chip">Intent Classification</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sujit-pramaniik" target="_blank" class="proj-link proj-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <button class="proj-link proj-demo" onclick="openDemoModal('support')">
+              <i class="fas fa-play"></i> Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: ML Prediction Project -->
+        <div class="project-card" id="proj-ml">
+          <div class="project-header">
+            <div class="project-icon ml-proj-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-meta">
+              <span class="project-number">03</span>
+              <h3 class="project-title">ML Prediction System</h3>
+            </div>
+          </div>
+          <div class="project-problem">
+            <span class="problem-label"><i class="fas fa-exclamation-triangle"></i> Problem</span>
+            <p>Making data-driven predictions manually from large datasets is time-consuming and error-prone.</p>
+          </div>
+          <div class="project-solution">
+            <span class="solution-label"><i class="fas fa-check-circle"></i> Solution</span>
+            <p>Built a supervised machine learning pipeline that preprocesses data, trains classification/regression models, evaluates performance with cross-validation, and outputs accurate predictions with visualization.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Python</span>
+
+            <span class="tech-chip">pandas</span>
+            <span class="tech-chip">matplotlib</span>
+            <span class="tech-chip">NumPy</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sujit-pramaniik" target="_blank" class="proj-link proj-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <button class="proj-link proj-demo" onclick="openDemoModal('ml')">
+              <i class="fas fa-play"></i> Live Demo
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EXPERIENCE / JOURNEY ═══════════════ -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Growth</span>
+        <h2 class="section-title">Learning <span class="highlight">Journey</span></h2>
+        <p class="section-sub">Consistent growth, one skill at a time</p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="left">
+          <div class="timeline-dot"><i class="fas fa-school"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2025</span>
+            <h3>Higher Secondary — Turka High School</h3>
+            <p>Completed WBCHSE with 80%, built a strong foundation in science and mathematics. First exposure to programming and problem-solving.</p>
+            <div class="timeline-tags">
+              <span>WBCHSE Board</span>
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="right">
+          <div class="timeline-dot"><i class="fas fa-code"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2025 — Early</span>
+            <h3>Started Python & Web Dev</h3>
+            <p>Self-taught Python through online resources. Built my first personal portfolio website and a restaurant website using WordPress. Created a QR Code Generator with Python.</p>
+            <div class="timeline-tags">
+              <span>Python</span>
+              <span>HTML/CSS</span>
+              <span>WordPress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="left">
+          <div class="timeline-dot"><i class="fas fa-university"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2025 — Current</span>
+            <h3>B.Tech CSE (AI & ML) — SETGOI, MAKAUT</h3>
+            <p>Enrolled in a specialized AI & Machine Learning engineering program. Diving deep into algorithms, data structures, and machine learning fundamentals.</p>
+            <div class="timeline-tags">
+              <span>AI & ML Specialization</span>
+              <span>MAKAUT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="right">
+          <div class="timeline-dot"><i class="fas fa-brain"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2025 — Ongoing</span>
+            <h3>AI Projects & Deep Learning</h3>
+            <p>Built an AI Voice Assistant and a Customer Support AI Agent. Currently exploring LangChain, LLMs, and building more sophisticated AI automation pipelines.</p>
+            <div class="timeline-tags">
+              <span>Voice AI</span>
+              <span>NLP</span>
+              <span>LangChain</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-future" data-aos="left">
+          <div class="timeline-dot"><i class="fas fa-rocket"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Future Goal</span>
+            <h3>Machine Learning Developer</h3>
+            <p>Aiming to contribute to production-level ML systems, publish open-source AI tools, and collaborate with teams building the future of human-computer interaction.</p>
+            <div class="timeline-tags">
+              <span>Full-time ML Role</span>
+              <span>Open Source</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROOF / TRUST ═══════════════ -->
+  <section class="section proof-section" id="proof">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trust & Credibility</span>
+        <h2 class="section-title">Proof of <span class="highlight">Work</span></h2>
+      </div>
+      <div class="proof-grid">
+
+        <div class="proof-card github-card">
+          <div class="proof-card-header">
+            <i class="fab fa-github proof-card-icon"></i>
+            <h3>GitHub Activity</h3>
+          </div>
+          <p>Active on GitHub with AI and web projects. Consistent commit history showing real progress and code quality.</p>
+          <div class="github-stats">
+            <div class="gh-stat"><span class="gh-num">3+</span><span class="gh-label">Repositories</span></div>
+            <div class="gh-stat"><span class="gh-num">Active</span><span class="gh-label">In 2025</span></div>
+          </div>
+          <a href="https://github.com/sujit-pramaniik" target="_blank" class="proof-link">
+            <i class="fab fa-github"></i> @sujit-pramaniik
+          </a>
+        </div>
+
+        <div class="proof-card cert-card">
+          <div class="proof-card-header">
+            <i class="fas fa-certificate proof-card-icon"></i>
+            <h3>Certifications</h3>
+          </div>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-award"></i></div>
+              <div>
+                <strong>Python for Everybody</strong>
+                <span>Coursera / University of Michigan</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-award"></i></div>
+              <div>
+                <strong>Machine Learning Foundations</strong>
+                <span>Self-learning + Online Courses</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-award"></i></div>
+              <div>
+                <strong>AI Tools & Applications</strong>
+                <span>Ongoing — 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proof-card demo-card">
+          <div class="proof-card-header">
+            <i class="fas fa-play-circle proof-card-icon"></i>
+            <h3>Project Demos</h3>
+          </div>
+          <p>Watch live demos of my AI projects in action — voice commands, chatbot responses, and ML predictions.</p>
+          <div class="demo-thumbs">
+            <div class="demo-thumb" onclick="openDemoModal('voice')">
+              <div class="demo-play"><i class="fas fa-play"></i></div>
+              <span>Voice Assistant Demo</span>
+            </div>
+            <div class="demo-thumb" onclick="openDemoModal('support')">
+              <div class="demo-play"><i class="fas fa-play"></i></div>
+              <span>Chatbot Demo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proof-card testimonial-card">
+          <div class="proof-card-header">
+            <i class="fas fa-quote-left proof-card-icon"></i>
+            <h3>What People Say</h3>
+          </div>
+          <div class="testimonial">
+            <p>"Sujit's AI projects show a real depth of understanding for someone so early in their journey. His voice assistant project impressed our entire study group."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SP</div>
+              <div>
+                <strong>Study Group Peer</strong>
+                <span>SETGOI, MAKAUT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="highlight">Work Together</span></h2>
+        <p class="section-sub">Have a project? Want to collaborate? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-tagline">
+            <h3>Open for collaborations, freelance AI/ML work, and learning partnerships</h3>
+            <p>Whether you have a startup idea that needs an AI solution, want to build something together, or just want to connect with a fellow tech enthusiast — my inbox is always open.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:sujitpramanik017@gmail.com" class="contact-link" id="emailLink">
+              <div class="contact-link-icon email-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>sujitpramanik017@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://linkedin.com/in/sujit-pramanaik" target="_blank" class="contact-link" id="linkedinLink">
+              <div class="contact-link-icon linkedin-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>/sujit-pramanaik</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://github.com/sujit-pramaniik" target="_blank" class="contact-link" id="githubLink">
+              <div class="contact-link-icon github-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <span>@sujit-pramaniik</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="tel:+916294520901" class="contact-link" id="phoneLink">
+              <div class="contact-link-icon phone-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <span>+91 6294520901</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName" name="from_name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" name="reply_to" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contactProject">Project / Idea (optional)</label>
+            <input type="text" id="contactProject" name="project" placeholder="e.g. AI chatbot for my shop" />
+          </div>
+          <div class="form-group">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" name="message" rows="4" placeholder="Tell me about your project or just say hi!" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Sujit<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+          <p>AI/ML Developer · Durgapur, India</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/sujit-pramaniik" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/sujit-pramanaik" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:sujitpramanik017@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sujit Pramanik. Built with passion & <span class="highlight">AI curiosity</span>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ CHATBOT ═══════════════ -->
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <div class="chatbot-bubble" id="chatbotBubble" onclick="toggleChatbot()">
+      <div class="chatbot-pulse"></div>
+      <i class="fas fa-robot chatbot-icon" id="chatbotBubbleIcon"></i>
+      <span class="chatbot-badge">AI</span>
+    </div>
+    <div class="chatbot-panel" id="chatbotPanel">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+          <div>
+            <strong>Sujit's AI Assistant</strong>
+            <span class="chatbot-status"><span class="chatbot-online-dot"></span> Online</span>
+          </div>
+        </div>
+        <button class="chatbot-close" onclick="toggleChatbot()" aria-label="Close chatbot"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-msg bot-msg">
+          <div class="chat-bubble">
+            👋 Hi! I'm Sujit's AI assistant. Ask me anything about him — his skills, projects, or how to get in touch!
+          </div>
+        </div>
+        <div class="chat-suggestions" id="chatSuggestions">
+          <button onclick="sendSuggestion('What projects has Sujit built?')">🚀 Projects</button>
+          <button onclick="sendSuggestion('What are Sujit&#39;s top skills?')">⚡ Skills</button>
+          <button onclick="sendSuggestion('How can I contact Sujit?')">📬 Contact</button>
+          <button onclick="sendSuggestion('What is Sujit studying?')">🎓 Education</button>
+        </div>
+      </div>
+      <div class="chatbot-input-area">
+        <input type="text" id="chatInput" placeholder="Ask anything about Sujit..." onkeydown="if(event.key==='Enter') sendChat()" />
+        <button onclick="sendChat()" class="chat-send-btn" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ DEMO MODAL ═══════════════ -->
+  <div class="modal-overlay" id="demoModal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeDemoModal()"><i class="fas fa-times"></i></button>
+      <h3 id="modalTitle">Project Demo</h3>
+      <div class="modal-content-body" id="modalBody">
+        <!-- filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Voice Modal -->
+  <div class="modal-overlay" id="voiceModal" onclick="closeVoiceModal(event)">
+    <div class="modal-box voice-modal-box">
+      <button class="modal-close" onclick="closeVoiceModalDirect()"><i class="fas fa-times"></i></button>
+      <h3>🎙️ AI Voice Assistant Demo</h3>
+      <p class="voice-model-sub">Experience how Sujit's voice AI understands text commands</p>
+      <div class="voice-demo-area">
+        <div class="voice-visualizer" id="voiceVisualizer">
+          <div class="v-bar"></div><div class="v-bar"></div><div class="v-bar"></div>
+          <div class="v-bar"></div><div class="v-bar"></div><div class="v-bar"></div>
+          <div class="v-bar"></div>
+        </div>
+        <p id="voiceStatus" class="voice-status">Click the microphone to start</p>
+        <button class="voice-trigger-btn" id="voiceTriggerBtn" onclick="startVoiceDemo()">
+          <i class="fas fa-microphone"></i>
+        </button>
+        <div class="voice-response-area" id="voiceResponseArea">
+          <div class="voice-command-display" id="voiceCommandDisplay"></div>
+          <div class="voice-reply-display" id="voiceReplyDisplay"></div>
+        </div>
+      </div>
+      <div class="voice-commands-hint">
+        <p>Try typing commands:</p>
+        <div class="voice-hints">
+          <span onclick="simulateVoice('What time is it?')">What time is it?</span>
+          <span onclick="simulateVoice('Tell me about AI')">Tell me about AI</span>
+          <span onclick="simulateVoice('Open YouTube')">Open YouTube</span>
+          <span onclick="simulateVoice('Who are you?')">Who are you?</span>
+        </div>
+        <div class="voice-type-area">
+          <input type="text" id="voiceTextInput" placeholder="Or type your command here..." onkeydown="if(event.key==='Enter') simulateVoice(this.value)" />
+          <button onclick="simulateVoice(document.getElementById('voiceTextInput').value)" class="voice-type-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
