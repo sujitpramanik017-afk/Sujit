@@ -124,7 +124,7 @@ function toggleChatbot() {
 const botResponses = {
   projects: `🚀 Sujit has built 3 AI projects:\n1. <b>AI Voice Assistant</b> — Understands voice commands using NLP\n2. <b>Customer Support AI Agent</b> — Automates ~80% of support queries\n3. <b>ML Prediction System</b> — Data-driven prediction pipeline`,
   skills: `⚡ Sujit's top skills:\n• Python (Advanced) — ML & automation\n• AI/ML — Chatbots, classifiers, NLP\n• Voice AI\n• Web Dev — HTML, CSS, JavaScript\n• Tools — Git, GitHub`,
-  contact: `📬 You can reach Sujit at:\n• Email: sujitpramanik017@gmail.com\n• LinkedIn: /sujit-pramanaik\n• GitHub: @sujit-pramaniik\n• Phone/WhatsApp: +91 6294520901`,
+  contact: `📬 You can reach Sujit at:\n• Email: sujitpramanik017@gmail.com\n• LinkedIn: /sujit-pramanik-756173366\n• GitHub: @sujit-pramaniik\n• Phone/WhatsApp: +91 6294520901`,
   education: `🎓 Sujit is pursuing B.Tech in CSE (AI & ML) at SETGOI, affiliated to MAKAUT (2025–2028). He scored 80% in Higher Secondary (WBCHSE).`,
   hire: `💼 Sujit is open to freelance AI/ML work, collaborations, and learning partnerships! Send him a message using the contact section or email directly.`,
   voice: `🎙️ Sujit's Voice Assistant can:\n• Recognize natural speech commands\n• Search Wikipedia & the web\n• Tell time, date, jokes\n• Respond with text-to-speech\nClick the "Voice AI Demo" button to try it!`,
